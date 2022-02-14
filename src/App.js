@@ -7,15 +7,15 @@ function App() {
 
   const [loading, setLoading] = useState(false)
 
-  /* useEffect(()=>{
+  useEffect(()=>{
     setLoading(true)
       setTimeout(()=>{
         setLoading(false)
-        }, 1500);},[])
- */
+        }, 2500);},[])
+
   return (
     <div> 
-         <Loading className={ loading ? "loading active" : "loading"}/>
+         <Loading className={ loading ? "loading" : "loading active"}/>
          <Button >boton vero</Button>
     </div>
   );
