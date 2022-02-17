@@ -129,6 +129,7 @@ export const ShowPass = styled(MdOutlineRemoveRedEye)`
         cursor:pointer;
         
 `
+/* 
 export const Button = styled.button`
         margin-top:30px;
         background-color:#4888E9;
@@ -143,3 +144,73 @@ export const Button = styled.button`
             opacity: .5;
         }
 `
+ */
+
+
+export const Padre = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+`;
+
+export const Button = styled.button`
+  width: 60%;
+  height: 200px;
+  margin: 3vw auto;
+  box-shadow: 5px 3px 3px grey;
+  text-align: center;
+  background: #e5e5e5;
+  font-size: 3vw;
+  color: #073f94;
+  font-weight: bolder;
+  border: 1px solid grey;
+`;
+
+export const Banner = styled.div`
+  max-width: 100%;
+  height: 250px;
+  top: 0;
+  background-image: url(${img});
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  text-align: center;
+  font-size: 5vw;
+  color: white;
+  text-shadow: 5px 5px 10px black;
+`;
+
+export const Bienvenida = styled.div`
+  max-width: 90%;
+  height: 80px;
+  background: #e5e5e5;
+  text-align: center;
+  position: relative;
+  margin: 2vw auto;
+  box-shadow: 5px 2px 2px grey;
+  font-size: 3vw;
+  color: #073f94;
+  font-weight: bolder;
+`;
+
+export const Saldo = styled.div`
+  max-width: 90%;
+  height: 150px;
+  text-align: center;
+  position: relative;
+  margin: 2vw auto;
+  box-shadow: 5px 2px 2px grey;
+  font-size: 3vw;
+  background: #e5e5e5;
+  color: #073f94;
+  font-weight: bolder;
+`;
+
+export const Footer = styled.div`
+width: 90%;
+margin: 10vw auto;
+font-size: 3vw;
+text-align: center;
+background: #e6e5e5;
+padding: 2vw;
+
+`;
