@@ -12,6 +12,7 @@ import {
   InputPass,
   Button
  } from '../components/elements'
+import LoginGoogle from '../components/LoginGoogle'
 import {parking, fb, google, apple} from '../global/imges/images'
 
 
@@ -19,6 +20,7 @@ const Login = () => {
   const [show, setShow] = useState(true)
     
   return (
+    
     <div className='container'>
         <ContainerLogin>
             <ImgBanner>
@@ -29,7 +31,8 @@ const Login = () => {
               <p>Iniciar sesión con redes sociales:</p>
                 <BoxSocial>
                   <img src={fb} alt="Facebook" />
-                  <img src={google} alt="Google" />
+                  {/* <img src={google} alt="Google" /> */}
+                  <LoginGoogle />
                   <img src={apple} alt="Apple" />
                 </BoxSocial>
                 <hr/>
