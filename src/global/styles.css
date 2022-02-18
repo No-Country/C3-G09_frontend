@@ -46,3 +46,8 @@
 .center a{
     text-decoration: none;
 }
+.linkComp{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

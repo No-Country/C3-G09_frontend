@@ -1,6 +1,7 @@
 import {AiOutlineLoading3Quarters} from 'react-icons/ai'
 import {MdOutlineRemoveRedEye} from 'react-icons/md'
 import styled from 'styled-components'
+import img from '../global/img/parking.jpg'
 
 export const LoadIcon = styled(AiOutlineLoading3Quarters)`
 font-size:100px;
@@ -129,8 +130,8 @@ export const ShowPass = styled(MdOutlineRemoveRedEye)`
         cursor:pointer;
         
 `
-/* 
-export const Button = styled.button`
+
+export const ButtonLog = styled.button`
         margin-top:30px;
         background-color:#4888E9;
         height: 65px;
@@ -144,7 +145,7 @@ export const Button = styled.button`
             opacity: .5;
         }
 `
- */
+ 
 
 
 export const Padre = styled.div`

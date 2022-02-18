@@ -1,10 +1,11 @@
 import React from 'react'
 import GoogleLogin from 'react-google-login'
-import {google} from '../global/imges/images'
+import {google} from '../global/img/images'
 
 const LoginGoogle = () => {
     const responseGoogle = (respuesta)=>{
         console.log(respuesta)
+        console.log(respuesta.profileObj)
     }
   return (
     <GoogleLogin

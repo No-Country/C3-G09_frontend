@@ -10,10 +10,11 @@ import {
   DivInput, 
   ShowPass,
   InputPass,
-  Button
+  ButtonLog
  } from '../components/elements'
 import LoginGoogle from '../components/LoginGoogle'
-import {parking, fb, google, apple} from '../global/imges/images'
+import {parking, fb, google, apple} from '../global/img/images'
+import {Link} from 'react-router-dom'
 
 
 const Login = () => {
@@ -31,7 +32,6 @@ const Login = () => {
               <p>Iniciar sesión con redes sociales:</p>
                 <BoxSocial>
                   <img src={fb} alt="Facebook" />
-                  {/* <img src={google} alt="Google" /> */}
                   <LoginGoogle />
                   <img src={apple} alt="Apple" />
                 </BoxSocial>
@@ -51,7 +51,9 @@ const Login = () => {
                   </InputPass>
                 </DivInput>
                 <div className='center'>
-                  <Button>Iniciar sesión</Button>
+                  <Link className='linkComp' to='/home'>
+                    <ButtonLog>Iniciar sesión</ButtonLog>
+                  </Link>
                   <span>¿No tienes cuenta?<a href="">Registrate</a></span>
                   </div> 
                   <hr />  
