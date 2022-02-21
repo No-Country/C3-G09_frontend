@@ -1,7 +1,14 @@
 import {AiOutlineLoading3Quarters} from 'react-icons/ai'
-import {MdOutlineRemoveRedEye} from 'react-icons/md'
+import {MdOutlineRemoveRedEye, MdArrowBackIosNew} from 'react-icons/md'
 import styled from 'styled-components'
 import img from '../global/img/parking.jpg'
+
+export const IconBack = styled(MdArrowBackIosNew)`
+    position:absolute;
+    top: 30%;
+    left:5%;
+    font-size: 45px;
+`
 
 export const LoadIcon = styled(AiOutlineLoading3Quarters)`
 font-size:100px;
@@ -51,9 +58,13 @@ export const ImgBanner = styled.div`
     padding:0;
     margin:0;
     width:100%;
-    background:red;
     position: relative;
     grid-column:1/4;
+
+    h2{
+        width:100%;
+        text-align:center;
+    }
     
     @supports(object-fit:cover){
         img{
@@ -106,7 +117,7 @@ export const DivInput = styled.div`
             position:relative;
             width: 100%;
             line-height: 70px;
-            font-size:1em;
+            font-size:0.8em;
             background: #FFFFFF;
             border: 1px solid rgba(0, 0, 0, 0.23);
             box-sizing: border-box;
@@ -116,6 +127,19 @@ export const DivInput = styled.div`
                 outline:none;
                 border: #4888E9 solid 2px; 
             }
+        }
+`
+export const DivCheckBox = styled.div`
+        width:100%;
+        display:flex;
+        align-items:center;
+        justify-content: space-around;
+        margin-top:15px;
+
+        input{
+            height:25px;
+            width:25px;
+            line-height: 35px;
         }
 `
 export const InputPass = styled.div`

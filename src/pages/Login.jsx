@@ -54,7 +54,7 @@ const Login = () => {
                   <Link className='linkComp' to='/home'>
                     <ButtonLog>Iniciar sesión</ButtonLog>
                   </Link>
-                  <span>¿No tienes cuenta?<a href="">Registrate</a></span>
+                  <span>¿No tienes cuenta?<Link to='/register'><a href="">Registrate</a></Link></span>
                   </div> 
                   <hr />  
                   <div className="center">
