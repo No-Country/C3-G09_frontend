@@ -1,9 +1,11 @@
-import React, { Fragment as div, useEffect, useState } from "react";
+import React, {useEffect, useState } from "react";
 import Loading from "./pages/Loading";
 import './global/styles.css'
 import Restriction from "./pages/Restriction";
 import './app.css'
-import Login from "./pages/Login";
+import Pay from "./pages/Pay";
+import Home from "./pages/Home";
+import Confirm from "./pages/Confirm"
 function App() {
 
   const [loading, setLoading] = useState(false)
@@ -17,9 +19,15 @@ function App() {
   return (
     <div>
       <Restriction/>
-        <div className="app">         
+        <div className="app">
             <Loading className={ loading ? "loading" : "loading active"}/>
-            <Login/>
+          {/* <Login/> */}
+
+          {/*  <Pay/> */ }
+          
+          {/* <Home/> */} 
+
+          <Confirm/>
         </div>
     </div>
   );

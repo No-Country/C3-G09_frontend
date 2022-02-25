@@ -1,6 +1,7 @@
-import {AiOutlineLoading3Quarters} from 'react-icons/ai'
-import {MdOutlineRemoveRedEye} from 'react-icons/md'
-import styled from 'styled-components'
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
+import { MdOutlineRemoveRedEye } from "react-icons/md";
+import styled from "styled-components";
+import img from "../img/parking.jpg";
 
 export const LoadIcon = styled(AiOutlineLoading3Quarters)`
 font-size:100px;
@@ -20,115 +21,111 @@ animation-timing-function: linear;
         
     }
     }
-`
+`;
 export const ContainerLogin = styled.div`
-    width: 100%;
-    height: 100vh;
-    /* background:blue; */
-    margin:0;
-    display:grid;
-    grid-template-columns: 25px 1fr 25px;
-    grid-template-rows: 200px 3fr 9fr 1fr;
+  width: 100%;
+  height: 100vh;
+  /* background:blue; */
+  margin: 0;
+  display: grid;
+  grid-template-columns: 25px 1fr 25px;
+  grid-template-rows: 200px 3fr 9fr 1fr;
 
-    p{
-        width:100%;
-        left: 30%;
-        font-size:1em;
-        font-weight:bold;
-    }
-    hr{
-        margin:30px;
-        border: 1px solid rgba(120, 118, 118, 0.65);
-    }
-    span{
-        font-size:.8em;
-    }
-    `
+  p {
+    width: 100%;
+    left: 30%;
+    font-size: 1em;
+    font-weight: bold;
+  }
+  hr {
+    margin: 30px;
+    border: 1px solid rgba(120, 118, 118, 0.65);
+  }
+  span {
+    font-size: 0.8em;
+  }
+`;
 
 export const ImgBanner = styled.div`
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background: red;
+  position: relative;
+  grid-column: 1/4;
 
-    padding:0;
-    margin:0;
-    width:100%;
-    background:red;
-    position: relative;
-    grid-column:1/4;
-    
-    @supports(object-fit:cover){
-        img{
-            margin:0;
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            object-position: center center;
-        }}
-     
-`
+  @supports (object-fit: cover) {
+    img {
+      margin: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+  }
+`;
 export const SupDiv = styled.div`
-        position:absolute;
-        top:0;
-        width:100%;
-        height:100%;
-        display:flex;
-        justify-content:center;
-        align-items:end;
-        font-size:30px;
-        color:#fff;
-`
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  font-size: 30px;
+  color: #fff;
+`;
 export const SocialContainer = styled.div`
-    grid-column:2 / 3;
-    /* background-color:red; */
-   
-`
+  grid-column: 2 / 3;
+  /* background-color:red; */
+`;
 export const BoxSocial = styled.div`
-        width: 100%;
-        padding : 10px;
-        display:flex;
-        align-items:center;
-        justify-content: space-around;
-               
-        
-        img{
-            width:100px;
-            height:100px;
-        }
-`
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  img {
+    width: 100px;
+    height: 100px;
+  }
+`;
 export const FormLog = styled.form`
-        grid-column: 2/3;
-`
+  grid-column: 2/3;
+`;
 export const DivInput = styled.div`
-    display: flex;
-    flex-direction:column;
-    margin-top:30px;
-        
-        input{
-            position:relative;
-            width: 100%;
-            line-height: 70px;
-            font-size:1em;
-            background: #FFFFFF;
-            border: 1px solid rgba(0, 0, 0, 0.23);
-            box-sizing: border-box;
-            border-radius: 4px;
-            height:70px;
-            &:focus{
-                outline:none;
-                border: #4888E9 solid 2px; 
-            }
-        }
-`
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+
+  input {
+    position: relative;
+    width: 100%;
+    line-height: 70px;
+    font-size: 1em;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.23);
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 70px;
+    &:focus {
+      outline: none;
+      border: #4888e9 solid 2px;
+    }
+  }
+`;
 export const InputPass = styled.div`
-        padding:0;
-`
+  padding: 0;
+`;
 export const ShowPass = styled(MdOutlineRemoveRedEye)`
-        width:30px;
-        height:30px;
-        position:absolute;
-        right:8%;
-        margin-top:20px;
-        cursor:pointer;
-        
-`
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 8%;
+  margin-top: 20px;
+  cursor: pointer;
+`;
 /* 
 export const Button = styled.button`
         margin-top:30px;
@@ -145,7 +142,6 @@ export const Button = styled.button`
         }
 `
  */
-
 
 export const Padre = styled.div`
   display: grid;
@@ -206,11 +202,146 @@ export const Saldo = styled.div`
 `;
 
 export const Footer = styled.div`
-width: 90%;
-margin: 10vw auto;
-font-size: 3vw;
-text-align: center;
-background: #e6e5e5;
-padding: 2vw;
-
+  width: 90%;
+  margin: 10vw auto;
+  font-size: 3vw;
+  text-align: center;
+  background: #e6e5e5;
+  padding: 2vw;
 `;
+
+export const ContainerPago = styled.div`
+  width: 720px;
+  height: 100vh;
+  margin: 0;
+  box-sixing: border-box;
+`;
+
+export const HeaderPago = styled.div`
+  width: 719px;
+  height: 150px;
+  max-height: 100%;
+  background: #4888e9;
+  text-align: center;
+  align-items: center;
+  overflow: hidden;
+  justify-content: center;
+
+  p {
+    margin: auto;
+    padding-top: 12vw;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw;
+  }
+`;
+
+export const Hr = styled.div`
+  margin: 30px;
+  border: 1px solid rgba(120, 118, 118, 0.65);
+`;
+
+export const Logo = styled.div`
+  text-align: center;
+  margin-top: 4vw;
+`;
+
+export const Monto = styled.div`
+  width: 100%;
+  margin-top: 15vw;
+  margin-bottom: 5vw;
+  text-align: center;
+  font-weight: bolder;
+  color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  p {
+    margin: auto;
+  }
+  hr {
+    margin: 30px;
+  }
+`;
+
+export const CircleDiv = styled.div`
+  text-align: center;
+
+  hr {
+    margin: 30px;
+  }
+  button {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 10px;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 10px;
+    background-color: white;
+    border: solid #e5e5e5 1px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+  }
+`;
+export const DatosDiv = styled.div`
+  text-align: center;
+
+  
+  button {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 10px;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 10px;
+    background-color: white;
+    border: solid #e5e5e5 1px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  hr {
+    margin: 30px;
+  }
+`;
+
+export const Confirmar = styled.button`
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+  color: #ffffff;
+
+  font-size: 20px;
+  font-weight: 100;
+  margin-top: 5vw;
+  margin-left: 37vw;
+  padding: 15px;
+  background-color: #4888e9;
+  border: solid #646566 1px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  left: 87px;
+  top: 720px;
+`;
+export const ListoDiv = styled.div `
+width: 720px;
+`
+
+export const Listo = styled.div `
+text-align: center;
+
+p{
+  text-align: center;
+ 
+}
+`
