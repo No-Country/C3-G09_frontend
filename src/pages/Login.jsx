@@ -22,7 +22,7 @@ const Login = () => {
     
   return (
     
-    <div className='container'>
+    <div >
         <ContainerLogin>
             <ImgBanner>
                 <img src={parking} alt=""/>
@@ -36,7 +36,7 @@ const Login = () => {
                   <img src={apple} alt="Apple" />
                 </BoxSocial>
                 <hr/>
-              </SocialContainer> 
+            </SocialContainer> 
               <FormLog>
                 <p>Iniciar sesión con cuenta existente:</p>
                 <DivInput>
@@ -45,10 +45,8 @@ const Login = () => {
                 </DivInput>
                 <DivInput>
                   <span>Contraseña</span>
-                  <InputPass>
                   <input type={show ? 'password' : 'text'} placeholder='Introduce tu contraseña' />
                   <ShowPass onClick={()=>setShow(!show)}/>
-                  </InputPass>
                 </DivInput>
                 <div className='center'>
                   <Link className='linkComp' to='/home'>
@@ -58,8 +56,8 @@ const Login = () => {
                   </div> 
                   <hr />  
                   <div className="center">
-                <h6><a href="">Politica de Privacidad</a></h6>  
-              </div>                
+                  <span><a href="">Politica de Privacidad</a></span>  
+                 </div>                
               </FormLog>
               
                        
