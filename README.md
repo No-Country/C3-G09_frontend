@@ -3,6 +3,30 @@ Park App
 Park App es una aplicacion orientada a celulares para gestionar el estacionamiento medido a traves de la red de parquímetros. 
 Vas a poder crear un usuario, cargar y consultar tu saldo, registrar tu estacionamiento, etc.
 
+💻 Para el desarrolo de esta aplicacion estamos utilizando --->
+
+• HTML 
+• CSS
+• JAVASCRIPT
+• REACT
+• MONGODB
+• EXPRESS
+• NODEJS
+
+👋🏻 Participantes --->
+
+DISEÑO UX/UI: Mercedes Simoncini 
+
+FRONT END: John Siabato
+           Veronica Jerez
+           
+BACK END: Ignacio Gibbs
+          Oscar Juárez
+          
+          
+Link Deploy ---->
+
+
 
 
 # Getting Started with Create React App
