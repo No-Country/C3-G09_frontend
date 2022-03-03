@@ -21,9 +21,9 @@ function App() {
       <Restriction/>
         <div className="app">
             <Loading className={ loading ? "loading" : "loading active"}/>
-          {/* <Login/> */}
+            {/* <Login/> */} 
 
-          {/*  <Pay/> */ }
+      {/*   <Pay/> */} 
           
           {/* <Home/> */} 
 

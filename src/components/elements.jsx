@@ -322,7 +322,7 @@ export const Confirmar = styled.button`
   font-size: 20px;
   font-weight: 100;
   margin-top: 5vw;
-  margin-left: 37vw;
+  margin-left: 44%;
   padding: 15px;
   background-color: #4888e9;
   border: solid #646566 1px;
@@ -333,6 +333,7 @@ export const Confirmar = styled.button`
   left: 87px;
   top: 720px;
 `;
+
 export const ListoDiv = styled.div `
 width: 720px;
 `

@@ -56,7 +56,7 @@ const Pay = () => {
          
         </Logo>
           <p>
-          Datos para factura <br />
+          Datos para factura<br />
           <br />
             Juan Perez DNI 34251256
             <br />
@@ -68,6 +68,7 @@ const Pay = () => {
           <p>Confirmar la carga</p>
         </Confirmar>
       </ContainerPago>
+
 
     </div>
   );
