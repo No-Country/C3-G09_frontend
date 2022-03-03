@@ -17,11 +17,11 @@ Vas a poder crear un usuario, cargar y consultar tu saldo, registrar tu estacion
 
 DISEÑO UX/UI: Mercedes Simoncini 
 
-FRONT END: John Siabato
-           Veronica Jerez
+FRONT END: John Siabato <br>
+           Veronica Jerez <br>
            
-BACK END: Ignacio Gibbs
-          Oscar Juárez
+BACK END: Ignacio Gibbs <br>
+          Oscar Juárez <br>
           
           
 Link Deploy ---->
