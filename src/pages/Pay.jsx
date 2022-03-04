@@ -1,13 +1,14 @@
 import React from "react";
 
-import { Confirmar,
+import {
    HeaderPago,
     Hr,
     Monto,
     ContainerPago,
     CircleDiv,
     DatosDiv,
-    Logo
+    Logo,
+    ConfirmarPago,
    } from "../components/elements";
 
 import { Visadeb } from "../global/imges/images";
@@ -64,9 +65,10 @@ const Pay = () => {
           <button>Modificar</button>
         </DatosDiv>
 
-        <Confirmar>
+        <ConfirmarPago>
           <p>Confirmar la carga</p>
-        </Confirmar>
+        </ConfirmarPago>
+        
       </ContainerPago>
 
 

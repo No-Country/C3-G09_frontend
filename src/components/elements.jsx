@@ -247,6 +247,134 @@ export const Hr = styled.div`
 export const Logo = styled.div`
   text-align: center;
   margin-top: 4vw;
+
+  .success-checkmark {
+    width: 80px;
+    height: 115px;
+    margin: 0 auto;
+    
+    .check-icon {
+        width: 80px;
+        height: 80px;
+        position: relative;
+        border-radius: 50%;
+        box-sizing: content-box;
+       background: #5fc175;
+       
+   
+        &::before, &::after {
+            content: '';
+            height: 100px;
+            position: absolute;
+            background: #00c853;
+            transform: rotate(-45deg);
+        }
+        
+        .icon-line {
+            height: 5px;
+            background-color: #ffffff;
+            display: block;
+            position: absolute;
+            z-index: 10;
+            
+            &.line-tip {
+                top: 46px;
+                left: 14px;
+                width: 25px;
+                transform: rotate(45deg);
+                animation: icon-line-tip 0.75s;
+            }
+            
+            &.line-long {
+                top: 38px;
+                right: 8px;
+                width: 47px;
+                transform: rotate(-45deg);
+                animation: icon-line-long 2s;
+            }
+        }
+        
+        .icon-circle {
+            top: -4px;
+            left: -4px;
+            z-index: 10;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            position: absolute;
+            box-sizing: content-box;
+            border: 4px solid #5fc175;
+           overflow: hidden;
+        }
+        
+        .icon-fix {
+            top: 8px;
+            width: 5px;
+            left: 28px;
+            z-index: 1;
+            height: 83px;
+            position: absolute;
+            transform: rotate(-45deg);
+            background-color:#5fc175;
+           overflow: hidden;
+        }
+    }
+}
+
+
+@keyframes icon-line-tip {
+    0% {
+        width: 0;
+        left: 1px;
+        top: 19px;
+    }
+    54% {
+        width: 0;
+        left: 1px;
+        top: 19px;
+    }
+    70% {
+        width: 50px;
+        left: -8px;
+        top: 37px;
+    }
+    84% {
+        width: 17px;
+        left: 21px;
+        top: 48px;
+    }
+    100% {
+        width: 25px;
+        left: 14px;
+        top: 45px;
+    }
+}
+
+@keyframes icon-line-long {
+    0% {
+        width: 0;
+        right: 46px;
+        top: 54px;
+    }
+    65% {
+        width: 0;
+        right: 46px;
+        top: 54px;
+    }
+    84% {
+        width: 55px;
+        right: 0px;
+        top: 35px;
+    }
+    100% {
+        width: 47px;
+        right: 8px;
+        top: 38px;
+    }
+}
+
+
+
 `;
 
 export const Monto = styled.div`
@@ -313,7 +441,7 @@ export const DatosDiv = styled.div`
   }
 `;
 
-export const Confirmar = styled.button`
+export const ConfirmarPago = styled.button`
   -webkit-border-radius: 16px;
   -moz-border-radius: 16px;
   border-radius: 16px;
@@ -322,7 +450,7 @@ export const Confirmar = styled.button`
   font-size: 20px;
   font-weight: 100;
   margin-top: 5vw;
-  margin-left: 44%;
+  margin-left: 37%;
   padding: 15px;
   background-color: #4888e9;
   border: solid #646566 1px;
@@ -346,3 +474,52 @@ p{
  
 }
 `
+
+export const AgregarDinero = styled.div `
+width: 719px;
+height: 1200px;
+margin: 0;
+padding: 0;
+`
+
+export const FormularioAddMoney = styled.form `
+  margin: 3vw;
+  max-width: 100%;
+
+  h3{
+    font-size: 4vw;
+  }
+ span{
+   font-size: 3vw;
+ }
+ 
+  `
+
+export const InputAddMoney = styled.div `
+border: solid #ffffff;
+
+width: 100%;
+box-shadow: none;
+
+`
+
+export const Confirmar = styled.button`
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+  color: #ffffff;
+
+  font-size: 20px;
+  font-weight: 100;
+  margin-top: 5vw;
+  margin-left: 43%;
+  padding: 15px;
+  background-color: #4888e9;
+  border: solid #646566 1px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  left: 87px;
+  top: 720px;
+`;

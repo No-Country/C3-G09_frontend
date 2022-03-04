@@ -6,6 +6,8 @@ import './app.css'
 import Pay from "./pages/Pay";
 import Home from "./pages/Home";
 import Confirm from "./pages/Confirm"
+import AddMoney from "./pages/AddMoney";
+
 function App() {
 
   const [loading, setLoading] = useState(false)
@@ -23,11 +25,15 @@ function App() {
             <Loading className={ loading ? "loading" : "loading active"}/>
             {/* <Login/> */} 
 
-      {/*   <Pay/> */} 
+            {/*  <Pay/>  */ }
           
-          {/* <Home/> */} 
+            {/* <Home/> */} 
 
           <Confirm/>
+
+            {/*    <AddMoney/> */} 
+
+
         </div>
     </div>
   );

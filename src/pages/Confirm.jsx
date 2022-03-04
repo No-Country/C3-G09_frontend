@@ -1,8 +1,6 @@
 import React from "react";
 import { Logo, Listo, ListoDiv, Confirmar } from "../components/elements";
 
-import { Ellipse } from "../global/imges/images";
-
 const Confirm = () => {
   return (
     <div>
@@ -12,7 +10,14 @@ const Confirm = () => {
         <br />
         <br />
         <Logo>
-          <img src={Ellipse} alt="imagen" />
+          <div class="success-checkmark">
+            <div class="check-icon">
+              <span class="icon-line line-tip"></span>
+              <span class="icon-line line-long"></span>
+              <div class="icon-circle"></div>
+              <div class="icon-fix"></div>
+            </div>
+          </div>
         </Logo>
         <br />
         <br />
@@ -20,7 +25,7 @@ const Confirm = () => {
           <h3>
             ¡LISTO! <br />
             SE ACREDITÓ TU PAGO
-            </h3>
+          </h3>
           <p>Operación N° xxxxxxxx</p>
         </Listo>
 
