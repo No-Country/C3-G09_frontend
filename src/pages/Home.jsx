@@ -1,47 +1,41 @@
 import React from "react";
-import { Banner } from "../components/elements";
-import { Bienvenida } from "../components/elements";
-import { Button } from "../components/elements";
+import { Link} from 'react-router-dom'
+import { Bienvenida, ContainerLogin } from "../components/elements";
+import { Button, ImgBanner, SupDiv } from "../components/elements";
 import { Saldo } from "../components/elements";
 import { Padre } from "../components/elements";
-import { Footer } from "../components/elements";
 import { FaDollarSign } from 'react-icons/fa';
 import { FaInfo } from 'react-icons/fa';
 import { FaCarSide } from 'react-icons/fa';
 import { FaUserAlt } from 'react-icons/fa';
+import {Portada1} from '../global/img/images'
 
 
 
 
 const Home = () => {
   return (
-    <div>
-      <Banner>
-        <h1>Park App </h1>
-      </Banner>
+    <ContainerLogin>
+      <ImgBanner>
+                <img src={Portada1} alt=""/>                
+      </ImgBanner>
 
       <Bienvenida>
-        <p>Bienvenido al Sistema de Estacionamiento Inteligente</p>
+        Bienvenido al Sistema de Estacionamiento <br /> Inteligente
       </Bienvenida>
 
       <Saldo>
         <p>TU SALDO PARA ESTACIONAR ES:</p>
       </Saldo>
       <Padre>
-        <Button> Estacionar<br></br> <FaCarSide size={"5vw"}/> </Button>
-        <Button>Carga de saldo <br></br><FaDollarSign size={"5vw"}/> </Button>
-        <Button>Perfil <br></br><FaUserAlt size={"5vw"}/></Button>
-        <Button>Informacion Útil <br></br> <FaInfo size={"5vw"} /></Button>
+        <Link to='/profile'><Button><FaCarSide /> Estacionar  </Button></Link> 
+        <Link to='/profile'><Button><FaDollarSign /> Carga de saldo </Button></Link> 
+        <Link to='/profile'><Button><FaUserAlt /> Perfil </Button></Link> 
+        <Link to='/profile'><Button><FaInfo />Informacion Útil </Button></Link> 
       </Padre>
-<Footer>
 
-  <p>
-   \ •  Grupo n° 9 • /
-  </p>
 
-</Footer>
-
-    </div>
+      </ContainerLogin>
   );
 };
 

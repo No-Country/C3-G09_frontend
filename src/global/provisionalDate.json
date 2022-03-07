@@ -1,0 +1,11 @@
+{
+    "user":
+        {
+            "name":"Maria",
+            "lastName":"Gonzalez",
+            "domain":"AE143CS",
+            "phone" : "291-4590887",
+            "mail" : "mariagonzalez@gmail.com"
+        }
+    
+}

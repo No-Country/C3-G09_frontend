@@ -1,7 +1,15 @@
-import { AiOutlineLoading3Quarters } from "react-icons/ai";
-import { MdOutlineRemoveRedEye } from "react-icons/md";
-import styled from "styled-components";
-import img from "../img/parking.jpg";
+import {AiOutlineLoading3Quarters, AiOutlineEdit} from 'react-icons/ai'
+import {MdOutlineRemoveRedEye, MdArrowBackIosNew} from 'react-icons/md'
+import styled from 'styled-components'
+import img from '../global/img/parking.jpg'
+
+export const IconBack = styled(MdArrowBackIosNew)`
+    position:absolute;
+    top: 30%;
+    left:5%;
+    color: #000;
+    font-size: 35px;
+`
 
 export const LoadIcon = styled(AiOutlineLoading3Quarters)`
 font-size:100px;
@@ -33,18 +41,26 @@ export const ContainerLogin = styled.div`
 
   p {
     width: 100%;
-    left: 30%;
-    font-size: 1em;
-    font-weight: bold;
-  }
-  hr {
-    margin: 30px;
-    border: 1px solid rgba(120, 118, 118, 0.65);
-  }
-  span {
-    font-size: 0.8em;
-  }
-`;
+    height: 100%;
+    font-family:roboto;
+    margin:0;
+    display:grid;
+    grid-template-columns: 18px 1fr 18px;
+    grid-template-rows: repeat(18, 1fr);
+
+    p{
+        width:100%;
+        left: 30%;
+        font-size:20px;
+    }
+    hr{        
+        border: 0.5px solid rgba(120, 118, 118, 0.65);
+        background:rgba(120, 118, 118, 0.65);
+    }
+    span{
+        font-size:0.5em;
+    }
+    `
 
 export const ImgBanner = styled.div`
   padding: 0;
@@ -54,538 +70,305 @@ export const ImgBanner = styled.div`
   position: relative;
   grid-column: 1/4;
 
-  @supports (object-fit: cover) {
-    img {
-      margin: 0;
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-      object-position: center center;
-    }
-  }
-`;
-export const SupDiv = styled.div`
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  font-size: 30px;
-  color: #fff;
-`;
-export const SocialContainer = styled.div`
-  grid-column: 2 / 3;
-  /* background-color:red; */
-`;
-export const BoxSocial = styled.div`
-  width: 100%;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-
-  img {
-    width: 100px;
-    height: 100px;
-  }
-`;
-export const FormLog = styled.form`
-  grid-column: 2/3;
-`;
-export const DivInput = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-top: 30px;
-
-  input {
+    padding:0;
+    margin-top:0;
+    width:100%;
+    height:100%;
     position: relative;
-    width: 100%;
-    line-height: 70px;
-    font-size: 1em;
-    background: #ffffff;
-    border: 1px solid rgba(0, 0, 0, 0.23);
-    box-sizing: border-box;
-    border-radius: 4px;
-    height: 70px;
-    &:focus {
-      outline: none;
-      border: #4888e9 solid 2px;
+    grid-column:1/4;
+    grid-row:1/5;
+
+    h2{
+        margin-top:54px;
+        font-size:0.8em;
+        width:100%;
+        text-align:center;
     }
-  }
-`;
-export const InputPass = styled.div`
-  padding: 0;
-`;
+    h1{        
+        grid-column:1/4;
+        font-size:0.8em;
+        text-align:center;
+        margin-top:130px;
+        
+    }
+    
+    @supports(object-fit:cover){
+        img{
+            margin:0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center center;
+        }}
+     
+`
+export const SupDiv = styled.div`
+        position:absolute;
+        top:0;
+        width:100%;
+        height:100%;
+        display:flex;
+        justify-content:center;
+        align-items:end;
+        font-size:20px;
+        color:#fff;
+`
+export const SocialContainer = styled.div`
+    grid-column: 2/3;
+    grid-row: 5/9;
+    font-family:roboto;
+    font-weight:400;
+    
+       
+`
+export const BoxSocial = styled.div`
+        padding : 10px;
+        display:flex;
+        align-items:center;
+        justify-content: space-around; 
+       
+        img{
+            width:64px;
+            height:64px;
+        }
+`
+export const FormLog = styled.form`
+        grid-column: 2/3;
+        grid-row:9/18;
+`
+export const DivInput = styled.div`
+    display: flex;
+    flex-direction:column;
+    grid-row-gap:15px; 
+    padding-bottom:15px;   
+        input{
+            position:relative;
+            width: 100%;
+            line-height: 70px;
+            font-size:14px;
+            background: #FFFFFF;
+            border: 1px solid rgba(0, 0, 0, 0.23);
+            box-sizing: border-box;
+            border-radius: 4px;
+            height:44px;
+
+            &:focus{
+                outline:none;
+                border: #4888E9 solid 2px; 
+            }
+        }
+`
+export const DivCheckBox = styled.div`
+        width:100%;
+        display:flex;
+        align-items:center;
+        justify-content: space-around;
+        input{
+            height:20px;
+            width:20px;
+            line-height: 35px;
+        }
+`
 export const ShowPass = styled(MdOutlineRemoveRedEye)`
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  right: 8%;
-  margin-top: 20px;
-  cursor: pointer;
-`;
-/* 
-export const Button = styled.button`
-        margin-top:30px;
+        width:25px;
+        height:25px;
+        color:rgba(120, 118, 118, 0.65);
+        margin-top:48px;
+        position:absolute;
+        right:8%;
+        cursor:pointer;
+        
+`
+export const ButtonLog = styled.button`
         background-color:#4888E9;
-        height: 65px;
-        width: 60%;
+        height: 52px;
+        width: 197px;
         border:none;
         color:#fff;
-        font-size: 1em;
-        border-radius: 4px;
-        
+        font-size: 0.6em;        
         &:hover{
             opacity: .5;
         }
 `
- */
+export const FormLogCount = styled.div`
+    grid-column:2/3;
+    grid-row: 4/18;
 
+`
 export const Padre = styled.div`
+  grid-column: 2/3;
+  grid-row:10/18;
+  margin-top:10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap:15px;
+    a{
+        width:100%;
+        display:flex;
+        padding:0;
+        justify-content:center; 
+        align-items:center;
+        text-decoration:none;
+        font-family: roboto;            
+    }
 `;
 
 export const Button = styled.button`
-  width: 60%;
-  height: 200px;
-  margin: 3vw auto;
-  box-shadow: 5px 3px 3px grey;
-  text-align: center;
+  width: 100%;
+  height: 100%;
   background: #e5e5e5;
-  font-size: 3vw;
+  font-size: 0.5em;
   color: #073f94;
   font-weight: bolder;
-  border: 1px solid grey;
-`;
+  border: none;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  grid-gap:15px;
 
-export const Banner = styled.div`
-  max-width: 100%;
-  height: 250px;
-  top: 0;
-  background-image: url(${img});
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
-  text-align: center;
-  font-size: 5vw;
-  color: white;
-  text-shadow: 5px 5px 10px black;
+    svg{
+        font-size:2.5em;
+    }
 `;
 
 export const Bienvenida = styled.div`
-  max-width: 90%;
+  grid-column: 2/3;
+  grid-row:5/7;
+  width:100%;
   height: 80px;
+  margin-top:10px;
   background: #e5e5e5;
-  text-align: center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
   position: relative;
-  margin: 2vw auto;
-  box-shadow: 5px 2px 2px grey;
-  font-size: 3vw;
+  font-size: 0.5em;
+  font-family: roboto;
   color: #073f94;
-  font-weight: bolder;
+  font-weight: 600;
 `;
 
 export const Saldo = styled.div`
-  max-width: 90%;
-  height: 150px;
+  grid-column: 2/3;
+  grid-row:7/10;
+  margin-top:10px;
   text-align: center;
   position: relative;
-  margin: 2vw auto;
-  box-shadow: 5px 2px 2px grey;
-  font-size: 3vw;
+  font-size: 1.1em;
+  font-family: roboto;
   background: #e5e5e5;
   color: #073f94;
   font-weight: bolder;
 `;
 
-export const Footer = styled.div`
-  width: 90%;
-  margin: 10vw auto;
-  font-size: 3vw;
-  text-align: center;
-  background: #e6e5e5;
-  padding: 2vw;
-`;
-
-export const ContainerPago = styled.div`
-  width: 720px;
-  height: 100vh;
-  margin: 0;
-  box-sixing: border-box;
-`;
-
-export const HeaderPago = styled.div`
-  width: 719px;
-  height: 150px;
-  max-height: 100%;
-  background: #4888e9;
-  text-align: center;
-  align-items: center;
-  overflow: hidden;
-  justify-content: center;
-
-  p {
-    margin: auto;
-    padding-top: 12vw;
-    width: 100%;
-    color: #ffffff;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    font-size: 4vw;
-  }
-`;
-
-export const Hr = styled.div`
-  margin: 30px;
-  border: 1px solid rgba(120, 118, 118, 0.65);
-`;
-
-export const Logo = styled.div`
-  text-align: center;
-  margin-top: 4vw;
-
-  .success-checkmark {
-    width: 80px;
-    height: 115px;
-    margin: 0 auto;
-    
-    .check-icon {
-        width: 80px;
-        height: 80px;
-        position: relative;
-        border-radius: 50%;
-        box-sizing: content-box;
-       background: #5fc175;
-       
-   
-        &::before, &::after {
-            content: '';
-            height: 100px;
-            position: absolute;
-            background: #00c853;
-            transform: rotate(-45deg);
-        }
-        
-        .icon-line {
-            height: 5px;
-            background-color: #ffffff;
-            display: block;
-            position: absolute;
-            z-index: 10;
-            
-            &.line-tip {
-                top: 46px;
-                left: 14px;
-                width: 25px;
-                transform: rotate(45deg);
-                animation: icon-line-tip 0.75s;
-            }
-            
-            &.line-long {
-                top: 38px;
-                right: 8px;
-                width: 47px;
-                transform: rotate(-45deg);
-                animation: icon-line-long 2s;
-            }
-        }
-        
-        .icon-circle {
-            top: -4px;
-            left: -4px;
-            z-index: 10;
+export const HeadProfile = styled.div`
+position:relative;
+grid-column: 2/3;
+grid-row: 1/5;
+height: 80%;
+display:flex;
+align-items: center;
+justify-content: end;
+flex-direction:column;
+grid-gap: 15px;
+        img{
             width: 80px;
             height: 80px;
-            border-radius: 50%;
-            position: absolute;
-            box-sizing: content-box;
-            border: 4px solid #5fc175;
-           overflow: hidden;
+            border-radius:50%;
         }
-        
-        .icon-fix {
-            top: 8px;
-            width: 5px;
-            left: 28px;
-            z-index: 1;
-            height: 83px;
-            position: absolute;
-            transform: rotate(-45deg);
-            background-color:#5fc175;
-           overflow: hidden;
+        span{
+            font-weight: 700;
+            font-size:0.8;
+            color: #073F94;
+            margin-bottom:30px;
         }
-    }
-}
-
-
-@keyframes icon-line-tip {
-    0% {
-        width: 0;
-        left: 1px;
-        top: 19px;
-    }
-    54% {
-        width: 0;
-        left: 1px;
-        top: 19px;
-    }
-    70% {
-        width: 50px;
-        left: -8px;
-        top: 37px;
-    }
-    84% {
-        width: 17px;
-        left: 21px;
-        top: 48px;
-    }
-    100% {
-        width: 25px;
-        left: 14px;
-        top: 45px;
-    }
-}
-
-@keyframes icon-line-long {
-    0% {
-        width: 0;
-        right: 46px;
-        top: 54px;
-    }
-    65% {
-        width: 0;
-        right: 46px;
-        top: 54px;
-    }
-    84% {
-        width: 55px;
-        right: 0px;
-        top: 35px;
-    }
-    100% {
-        width: 47px;
-        right: 8px;
-        top: 38px;
-    }
-}
-
-
-
-`;
-
-export const Monto = styled.div`
-  width: 100%;
-  margin-top: 15vw;
-  margin-bottom: 5vw;
-  text-align: center;
-  font-weight: bolder;
-  color: black;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  p {
-    margin: auto;
-  }
-  hr {
-    margin: 30px;
-  }
-`;
-
-export const CircleDiv = styled.div`
-  text-align: center;
-
-  hr {
-    margin: 30px;
-  }
-  button {
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 10px;
-    color: #000000;
-    font-size: 20px;
-    font-weight: 100;
-    padding: 10px;
-    background-color: white;
-    border: solid #e5e5e5 1px;
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
-    text-align: center;
-  }
-`;
-export const DatosDiv = styled.div`
-  text-align: center;
-
-  
-  button {
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 10px;
-    color: #000000;
-    font-size: 20px;
-    font-weight: 100;
-    padding: 10px;
-    background-color: white;
-    border: solid #e5e5e5 1px;
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
-    text-align: center;
-  }
-
-  hr {
-    margin: 30px;
-  }
-`;
-
-export const ConfirmarPago = styled.button`
-  -webkit-border-radius: 16px;
-  -moz-border-radius: 16px;
-  border-radius: 16px;
-  color: #ffffff;
-
-  font-size: 20px;
-  font-weight: 100;
-  margin-top: 5vw;
-  margin-left: 37%;
-  padding: 15px;
-  background-color: #4888e9;
-  border: solid #646566 1px;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-  text-align: center;
-  left: 87px;
-  top: 720px;
-`;
-
-export const ListoDiv = styled.div `
-width: 720px;
 `
-
-export const Listo = styled.div `
-text-align: center;
-
-p{
-  text-align: center;
- 
-}
+export const ButtonsBox = styled.div`
+grid-column: 2/3;
+grid-row: 4/14;
+display:flex;
+flex-direction:column;
+        ul{
+            height:70%;
+            padding-left:0;
+            display:grid;
+            grid-template-rows: repeat(5, 1fr);
+            list-style:none;
+        }
+        li{
+            heigth:100%;
+            width:100%;
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            font-weight:700;
+            font-size:0.6em;
+            border-top: 2px solid #C4C4C4;
+        }
+        li:last-child{
+            border-bottom: 2px solid #C4C4C4;
+        }
+        li span{
+            font-size:1.5em;
+            padding-right: 10px;
+        }
 `
-
-export const AgregarDinero = styled.div `
-width: 719px;
-height: 1200px;
-margin: 0;
-padding: 0;
+export const CloseSesion = styled.div`
+    grid-row:12/14;
+    grid-column: 2/3;
+    display:flex;
+    align-items:center;
+    font-size:0.6em;
+    font-weight:700;
+        a{
+            line-height: 90px;
+        }
+        span{
+            font-size:1.5em;
+            padding-right:30px;
+        }        
 `
-
-export const FormularioAddMoney = styled.form `
-  margin: 3vw;
-  max-width: 100%;
-
-  h3{
-    font-size: 4vw;
-  }
- span{
-   font-size: 3vw;
- }
- 
-  `
-
-export const InputAddMoney = styled.div `
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  font-size:2.8vw;
-
-  option{
-    padding: 1vw;
-    width: 90%;
-    border: none;
-    font-size:2.8vw;
-  }
-
-  select{
-    display: flex;
-    margin: 1vw;
-    padding: 2vw;
-    border: none;
-    width: 90%;
-    font-size: 2.8vw;
-    border-bottom: 0.5px solid grey;
-    color: #555;
-  }
-  input{
-    display: flex;
-    margin: 1vw;
-    width: 87%;
-    border: none;
-    border-bottom: 0.5px solid grey;
-    padding: 1.5vw;
-    font-size:2.8vw;
-    
-  }
-  input::placeholder{
-    font-size:2.8vw;
-    
-    color: #555;
-    
-  }
-  p{
-    font-size: 2.8vw;
-    font-weight: bold;
-  }
- }
+export const DtInputBox = styled.div`
+    grid-row: 4/18;
+    grid-column:2/3;
+    grid-gap:15px;
+       
 `
-
-export const Confirmar = styled.button`
-  -webkit-border-radius: 16px;
-  -moz-border-radius: 16px;
-  border-radius: 16px;
-  color: #ffffff;
-
-  font-size: 20px;
-  font-weight: 100;
-  margin-top: 5vw;
-  margin-left: 43%;
-  padding: 15px;
-  background-color: #4888e9;
-  border: solid #646566 1px;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-  text-align: center;
-  left: 87px;
-  top: 720px;
-`;
-
-export const HeaderAdd = styled.div`
-  width: 719px;
-  height: 150px;
-  max-height: 100%;
-  background: #4888e9;
-  text-align: center;
-  align-items: center;
-  overflow: hidden;
-  justify-content: center;
-
-  p {
-    margin: auto;
-    padding-top: 15vw;
+export const DtInput = styled.input`
+    position:relative;
+    margin-top:20px;
     width: 100%;
-    color: #ffffff;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    font-size: 4vw;
-  }
-`;
-
-export const IngresarPago = styled.div `
-
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.23);
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size:0.7em;
+    padding-top:20px;
+    padding-left:10px;
+    &:focus{
+        outline:none;
+        border: #4888E9 solid 2px; 
+    }
+    
+`
+export const WrapDiv = styled.div`
+    margin-top:20px;
+    margin-left:10px;
+    position:absolute;
+    width:90%;
+    display:flex;
+    justify-content:space-between;
+    z-index:2;
+    font-size:0.5em;
+    svg{
+        margin-top:8px;
+        margin-right:10px;
+        font-size:2em;
+        color:rgba(0, 0, 0, 0.6);
+    }
 
 `
-

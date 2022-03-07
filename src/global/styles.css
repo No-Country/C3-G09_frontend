@@ -40,9 +40,14 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 30px;
-    gap:20px;
+    margin-top: 15px;
+    gap:10px;
 }
 .center a{
     text-decoration: none;
+}
+.linkComp{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }

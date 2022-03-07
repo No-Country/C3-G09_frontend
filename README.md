@@ -1,3 +1,34 @@
+<b> Park App </b>
+
+Park App es una aplicacion orientada a celulares para gestionar el estacionamiento medido a traves de la red de parquímetros. 
+Vas a poder crear un usuario, cargar y consultar tu saldo, registrar tu estacionamiento, etc.
+
+💻 Para el desarrollo de esta aplicacion estamos utilizando --->
+
+• HTML <br>
+• CSS <br>
+• JAVASCRIPT  <br>
+• REACT  <br>
+• MONGODB  <br>
+• EXPRESS  <br>
+• NODEJS <br>
+
+👋🏻 Participantes --->
+
+DISEÑO UX/UI: Mercedes Simoncini 
+
+FRONT END: John Siabato  &  Veronica Jerez <br>
+            
+           
+BACK END: Ignacio Gibbs  &  Oscar Juárez <br>
+          
+          
+          
+Link Deploy ---->
+
+
+
+ <br> <br> <br> <br> <br> <br> <br> <br>
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -10,16 +10,19 @@ import {
   DivInput, 
   ShowPass,
   InputPass,
-  Button
+  ButtonLog
  } from '../components/elements'
-import {parking, fb, google, apple} from '../global/imges/images'
+import LoginGoogle from '../components/LoginGoogle'
+import {parking, fb, google, apple} from '../global/img/images'
+import {Link} from 'react-router-dom'
 
 
 const Login = () => {
   const [show, setShow] = useState(true)
     
   return (
-    <div className='container'>
+    
+    <div >
         <ContainerLogin>
             <ImgBanner>
                 <img src={parking} alt=""/>
@@ -29,11 +32,11 @@ const Login = () => {
               <p>Iniciar sesión con redes sociales:</p>
                 <BoxSocial>
                   <img src={fb} alt="Facebook" />
-                  <img src={google} alt="Google" />
+                  <LoginGoogle />
                   <img src={apple} alt="Apple" />
                 </BoxSocial>
                 <hr/>
-              </SocialContainer> 
+            </SocialContainer> 
               <FormLog>
                 <p>Iniciar sesión con cuenta existente:</p>
                 <DivInput>
@@ -42,19 +45,19 @@ const Login = () => {
                 </DivInput>
                 <DivInput>
                   <span>Contraseña</span>
-                  <InputPass>
                   <input type={show ? 'password' : 'text'} placeholder='Introduce tu contraseña' />
                   <ShowPass onClick={()=>setShow(!show)}/>
-                  </InputPass>
                 </DivInput>
                 <div className='center'>
-                  <Button>Iniciar sesión</Button>
-                  <span>¿No tienes cuenta?<a href="">Registrate</a></span>
+                  <Link className='linkComp' to='/home'>
+                    <ButtonLog>Iniciar sesión</ButtonLog>
+                  </Link>
+                  <span>¿No tienes cuenta?<Link to='/register'><a href="">Registrate</a></Link></span>
                   </div> 
                   <hr />  
                   <div className="center">
-                <h6><a href="">Politica de Privacidad</a></h6>  
-              </div>                
+                  <span><a href="">Politica de Privacidad</a></span>  
+                 </div>                
               </FormLog>
               
                        
