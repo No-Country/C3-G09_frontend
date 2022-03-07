@@ -1,4 +1,4 @@
-import React, { Fragment as div, useEffect, useState } from "react";
+import React, {useEffect, useState } from "react";
 import Loading from "./pages/Loading";
 import './global/styles.css'
 import Restriction from "./pages/Restriction";
@@ -23,19 +23,19 @@ function App() {
 
   return (
     <div>
-      <Router>
-        <Restriction/>
-          <div className="app">         
-              <Loading className={ loading ? "loading" : "loading active"}/>              
-          </div>
-          <Routes>
-            <Route path='/' element={<Login/>} />
+
+      <Restriction/>
+        <div className="app">
+            <Loading className={ loading ? "loading" : "loading active"}/>
+            {/* <Login/> */}
+
+            {/*  <Pay/>  */ }
             <Route path='/home' element={<Home/>} />
             <Route path="/register" element={<Register/>}/>
             <Route path='/profile' element={<Profile/>}/>
             <Route path='/userdate' element={<UserDate/>}/>
-          </Routes>
-      </Router>
+            </div>
+
     </div>
   );
 }

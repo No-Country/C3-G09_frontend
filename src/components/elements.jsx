@@ -29,8 +29,17 @@ animation-timing-function: linear;
         
     }
     }
-`
+`;
 export const ContainerLogin = styled.div`
+  width: 100%;
+  height: 100vh;
+  /* background:blue; */
+  margin: 0;
+  display: grid;
+  grid-template-columns: 25px 1fr 25px;
+  grid-template-rows: 200px 3fr 9fr 1fr;
+
+  p {
     width: 100%;
     height: 100%;
     font-family:roboto;
@@ -54,6 +63,12 @@ export const ContainerLogin = styled.div`
     `
 
 export const ImgBanner = styled.div`
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background: red;
+  position: relative;
+  grid-column: 1/4;
 
     padding:0;
     margin-top:0;
