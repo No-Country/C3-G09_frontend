@@ -29,9 +29,9 @@ function App() {
           
             {/* <Home/> */} 
 
-          <Confirm/>
+          {/*   <Confirm/> */} 
 
-            {/*    <AddMoney/> */} 
+             <AddMoney/>
 
 
         </div>

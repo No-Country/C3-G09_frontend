@@ -2,55 +2,81 @@ import React from "react";
 
 import {
   AgregarDinero,
-  HeaderPago,
+  HeaderAdd,
   Hr,
   FormularioAddMoney,
   InputAddMoney,
+  Confirmar,
+  IngresarPago,
 } from "../components/elements";
 
 const AddMoney = () => {
   return (
     <div>
       <AgregarDinero>
-        <HeaderPago>
+        <HeaderAdd>
           <p> Agregar Dinero </p>
-        </HeaderPago>
+        </HeaderAdd>
 
         <FormularioAddMoney>
           <h3>Importe a acreditar</h3>
+
           <InputAddMoney>
             <span>
-              <input type="number" />
+              <input type="number" placeholder="$" />
             </span>
+
+           
+            <p>Forma de pago</p>
+            <span>
+              <label for=""></label>
+              <select id="" name="">
+                <option value="Nueva tarjeta">Nueva tarjeta</option>
+              </select>
+            </span>
+
+            <span>
+              <label for=""></label>
+              <select id="" name="">
+              <option value="Banco">Visa</option>
+                <option value="Banco">Amex</option>
+                <option value="Banco">Dinners</option>
+                <option value="Banco">Cabal</option>
+                <option value="Banco">Maestro</option>
+                <option value="Banco">Mastercard</option>
+              </select>
+            </span>
+
+            <span>
+              <label for=""></label>
+              <select id="" name="">
+              <option value="Banco">Banco Macro</option>
+              <option value="Banco">HSBC Bank Argentina</option>
+              <option value="Banco">Santander Rio</option>
+              <option value="Banco">ISBC Banck</option>
+              <option value="Banco">Galicia</option>
+              <option value="Banco">Banco Nacion</option>
+
+              </select>
+            </span>
+            <br /><br /><br />
+
+            <p>Datos tarjeta</p>
+            <span>
+              <input type="number" placeholder="Numero de tarjeta (18 digitos)" />
+          
+            
+          
+              <input type="number" placeholder="Vencimiento" />
+          
+            
+            
+              <input type="number" placeholder="Codigo de seguridad (3 digitos)" />
+            </span>
+
+           
+
           </InputAddMoney>
-          <Hr></Hr>
-          <h3>Forma de pago</h3>
-          <label for="Pago">Tarjeta de Pago</label> <br />
-          <select id="pago" classname="formadepago">
-            <br />
-            <option value="Nueva tarjeta">Nueva tarjeta</option>
-            <option value="Amex">MercadoPago</option>
-          </select>
-          <Hr></Hr>
-          <label for="Pago">Forma de Pago</label> <br />
-          <select id="pago" classname="formadepago">
-            <br />
-            <option value="Visa">Visa</option>
-            <option value="Amex">Amex</option>
-            <option value="Dinners">Dinners</option>
-            <option value="Cabal">Cabal</option>
-            <option value="Maestro">Maestro</option>
-            <option value="Mastercard">Mastercard</option>
-          </select>
-          <Hr></Hr>
-          <p>Datos de tarjeta </p>
-          <input type="number" placeholder="Número de tarjeta (16 digitos)" />
-          <br />
-          <input type="date" placeholder="Vencimiento" /> <br />
-          <input
-            type="number"
-            placeholder="Código de seguridad (3 digitos)"
-          />{" "}
           <br />
           <label>
             <input type="checkbox" />
@@ -59,7 +85,9 @@ const AddMoney = () => {
             </span>
           </label>
         </FormularioAddMoney>
-        <Hr></Hr>
+       
+
+        <Confirmar>pagar</Confirmar>
       </AgregarDinero>
     </div>
   );

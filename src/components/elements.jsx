@@ -496,11 +496,49 @@ export const FormularioAddMoney = styled.form `
   `
 
 export const InputAddMoney = styled.div `
-border: solid #ffffff;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size:2.8vw;
 
-width: 100%;
-box-shadow: none;
+  option{
+    padding: 1vw;
+    width: 90%;
+    border: none;
+    font-size:2.8vw;
+  }
 
+  select{
+    display: flex;
+    margin: 1vw;
+    padding: 2vw;
+    border: none;
+    width: 90%;
+    font-size: 2.8vw;
+    border-bottom: 0.5px solid grey;
+    color: #555;
+  }
+  input{
+    display: flex;
+    margin: 1vw;
+    width: 87%;
+    border: none;
+    border-bottom: 0.5px solid grey;
+    padding: 1.5vw;
+    font-size:2.8vw;
+    
+  }
+  input::placeholder{
+    font-size:2.8vw;
+    
+    color: #555;
+    
+  }
+  p{
+    font-size: 2.8vw;
+    font-weight: bold;
+  }
+ }
 `
 
 export const Confirmar = styled.button`
@@ -523,3 +561,31 @@ export const Confirmar = styled.button`
   left: 87px;
   top: 720px;
 `;
+
+export const HeaderAdd = styled.div`
+  width: 719px;
+  height: 150px;
+  max-height: 100%;
+  background: #4888e9;
+  text-align: center;
+  align-items: center;
+  overflow: hidden;
+  justify-content: center;
+
+  p {
+    margin: auto;
+    padding-top: 15vw;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw;
+  }
+`;
+
+export const IngresarPago = styled.div `
+
+
+`
+
