@@ -11,8 +11,8 @@ import {
     ConfirmarPago,
    } from "../components/elements";
 
-import { Visadeb } from "../global/imges/images";
-import { ellipse } from "../global/imges/images";
+   import {Ellipse} from '../global/img/images'
+   import {VisaDebito} from '../global/img/images'
 
 
 
@@ -28,15 +28,13 @@ const Pay = () => {
        
 
         <Monto>
-       
           <p>Monto</p>
           <p> $ 200</p>
-         
         </Monto>
 
         <Hr></Hr>
         <Logo>
-        <img src={Visadeb} alt="imagen" />
+        <img src={VisaDebito} alt="imagen" />
          
         </Logo>
        
@@ -53,9 +51,11 @@ const Pay = () => {
 
         <DatosDiv>
         <Logo>
-        <img src={ellipse} alt="imagen" />
+       
          
         </Logo>
+        <img src={Ellipse} alt="imagen" />
+        
           <p>
           Datos para factura<br />
           <br />

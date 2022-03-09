@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, BrowserRouter} from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, BrowserRouter} from 'react-router-dom';
 import React, {useEffect, useState } from "react";
 import Loading from "./pages/Loading";
 import './global/styles.css'
@@ -9,6 +9,8 @@ import Home from "./pages/Home";
 import Register from "./pages/Register";
 import Profile from "./pages/Profile";
 import UserDate from "./pages/UserDate";
+
+
 
 
 function App() {
@@ -28,7 +30,7 @@ function App() {
       <Loading className={ loading ? "loading" : "loading active"}/>
         
         <div className="app">
-            
+        
             {/* <Login/> */}
 
             {/*  <Pay/>  */ }
@@ -39,12 +41,11 @@ function App() {
             <Route path="/register" element={<Register/>}/>
             <Route path='/profile' element={<Profile/>}/>
             <Route path='/userdate' element={<UserDate/>}/>
+            
+
             </Routes>
         </BrowserRouter>
             </div>
-        
-        
-        
 
     </div>
   );

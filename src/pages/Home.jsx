@@ -1,24 +1,25 @@
 import React from "react";
 import { Link} from 'react-router-dom'
-import { Bienvenida, ContainerLogin } from "../components/elements";
-import { Button, ImgBanner, SupDiv } from "../components/elements";
+import { Bienvenida, ContainerHome,} from "../components/elements";
+import { Button, ImgBannerHome, SupDiv } from "../components/elements";
 import { Saldo } from "../components/elements";
 import { Padre } from "../components/elements";
 import { FaDollarSign } from 'react-icons/fa';
 import { FaInfo } from 'react-icons/fa';
 import { FaCarSide } from 'react-icons/fa';
 import { FaUserAlt } from 'react-icons/fa';
-import {Portada1} from '../global/img/images'
+import {Portada1} from '../global/img/images';
 
 
 
 
 const Home = () => {
   return (
-    <ContainerLogin>
-      <ImgBanner>
-                <img src={Portada1} alt=""/>                
-      </ImgBanner>
+    <ContainerHome>
+
+      <ImgBannerHome>
+                <img src={Portada1} alt=""/>
+      </ImgBannerHome>
 
       <Bienvenida>
         Bienvenido al Sistema de Estacionamiento <br /> Inteligente
@@ -27,6 +28,7 @@ const Home = () => {
       <Saldo>
         <p>TU SALDO PARA ESTACIONAR ES:</p>
       </Saldo>
+      <br></br>
       <Padre>
         <Link to='/profile'><Button><FaCarSide /> Estacionar  </Button></Link> 
         <Link to='/profile'><Button><FaDollarSign /> Carga de saldo </Button></Link> 
@@ -35,7 +37,7 @@ const Home = () => {
       </Padre>
 
 
-      </ContainerLogin>
+      </ContainerHome>
   );
 };
 

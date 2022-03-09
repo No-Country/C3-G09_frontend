@@ -47,12 +47,8 @@ export const ContainerLogin = styled.div`
     display:grid;
     grid-template-columns: 18px 1fr 18px;
     grid-template-rows: repeat(18, 1fr);
+    font-size:20px;
 
-    p{
-        width:100%;
-        left: 30%;
-        font-size:20px;
-    }
     hr{        
         border: 0.5px solid rgba(120, 118, 118, 0.65);
         background:rgba(120, 118, 118, 0.65);
@@ -60,16 +56,138 @@ export const ContainerLogin = styled.div`
     span{
         font-size:0.5em;
     }
-    `
+`
+
+export const ContainerHome = styled.div`
+width: 720px;
+height: 1200;
+margin: 1vw;
+
+
+`
+{/*
+export const ContainerPago = styled.div`
+  width: 720px;
+  height: 100vh;
+  margin: 0;
+  box-sixing: border-box;
+`;
+
+export const HeaderPago = styled.div`
+  width: 719px;
+  height: 150px;
+  max-height: 100%;
+  background: #4888e9;
+  text-align: center;
+  align-items: center;
+  overflow: hidden;
+  justify-content: center;
+  p {
+    margin: auto;
+    padding-top: 12vw;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw;
+  }
+`;
+
+export const Logo = styled.div`
+  text-align: center;
+  margin-top: 4vw;
+`;
+export const Monto = styled.div`
+  width: 100%;
+  margin-top: 15vw;
+  margin-bottom: 5vw;
+  text-align: center;
+  font-weight: bolder;
+  color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  p {
+    margin: auto;
+  }
+  hr {
+    margin: 30px;
+  }
+`;
+
+export const CircleDiv = styled.div`
+  text-align: center;
+  hr {
+    margin: 30px;
+  }
+  button {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 10px;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 10px;
+    background-color: white;
+    border: solid #e5e5e5 1px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+  }
+`;
+export const DatosDiv = styled.div`
+  text-align: center;
+  
+  button {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 10px;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 10px;
+    background-color: white;
+    border: solid #e5e5e5 1px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+  }
+  hr {
+    margin: 30px;
+  }
+`;
+
+export const ConfirmarPago = styled.button`
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 100;
+  margin-top: 5vw;
+  margin-left: 37vw;
+  padding: 15px;
+  background-color: #4888e9;
+  border: solid #646566 1px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  left: 87px;
+  top: 720px;
+`;
+
+export const Hr = styled.div`
+  margin: 30px;
+  border: 1px solid rgba(120, 118, 118, 0.65);
+`;
+
+
+*/}
 
 export const ImgBanner = styled.div`
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  background: red;
-  position: relative;
-  grid-column: 1/4;
-
     padding:0;
     margin-top:0;
     width:100%;
@@ -84,12 +202,11 @@ export const ImgBanner = styled.div`
         width:100%;
         text-align:center;
     }
-    h1{        
+    h1{
         grid-column:1/4;
         font-size:0.8em;
         text-align:center;
         margin-top:130px;
-        
     }
     
     @supports(object-fit:cover){
@@ -101,7 +218,73 @@ export const ImgBanner = styled.div`
             object-position: center center;
         }}
      
+
 `
+
+export const ImgBannerProfile = styled.div`
+    padding:0;
+    margin-top:0;
+    max-width:100%;
+    height:350px;
+    position: relative;
+    grid-column:1/4;
+    grid-row:1/5;
+
+    h2{
+        margin-top:54px;
+        font-size:0.8em;
+        width:100%;
+        text-align:center;
+    }
+    h1{
+        grid-column:1/4;
+        font-size:5vw;
+        text-align:center;
+        margin-top:130px;
+    }
+    
+    @supports(object-fit:cover){
+        img{
+            margin:0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center center;
+        }}
+     
+
+`
+
+export const ImgBannerHome = styled.div `
+padding:0;
+margin-top:0;
+max-width:100%;
+height:;
+position: relative;
+
+h2{
+    margin-top:54px;
+    font-size:0.8em;
+    width:100%;
+    text-align:center;
+}
+h1{
+    font-size:0.8em;
+    text-align:center;
+    margin-top:130px;
+}
+
+@supports(object-fit:cover){
+    img{
+        margin:0;
+        height: 400px;
+        max-width: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }}
+
+`
+
 export const SupDiv = styled.div`
         position:absolute;
         top:0;
@@ -196,21 +379,24 @@ export const FormLogCount = styled.div`
 
 `
 export const Padre = styled.div`
-  grid-column: 2/3;
-  grid-row:10/18;
+ 
   margin-top:10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-gap:15px;
+
     a{
         width:100%;
+        height: 200px;
         display:flex;
         padding:0;
         justify-content:center; 
         align-items:center;
         text-decoration:none;
-        font-family: roboto;            
+        font-family: roboto;
+        background: blue;
+        font-size: 6vw;
     }
 `;
 
@@ -228,16 +414,13 @@ export const Button = styled.button`
   align-items:center;
   grid-gap:15px;
 
-    svg{
-        font-size:2.5em;
-    }
+
 `;
 
 export const Bienvenida = styled.div`
-  grid-column: 2/3;
-  grid-row:5/7;
+
   width:100%;
-  height: 80px;
+  height: 90px;
   margin-top:10px;
   background: #e5e5e5;
   display:flex;
@@ -245,23 +428,29 @@ export const Bienvenida = styled.div`
   justify-content:center;
   text-align:center;
   position: relative;
-  font-size: 0.5em;
+  font-size: 3vw;
   font-family: roboto;
   color: #073f94;
   font-weight: 600;
 `;
 
 export const Saldo = styled.div`
-  grid-column: 2/3;
-  grid-row:7/10;
+ 
+  height: 150px;
   margin-top:10px;
   text-align: center;
   position: relative;
-  font-size: 1.1em;
   font-family: roboto;
   background: #e5e5e5;
   color: #073f94;
   font-weight: bolder;
+  p{
+    font-size: 3vw;
+    margin: auto;
+    padding: 2vw;
+    text-align: center;
+    
+  }
 `;
 
 export const HeadProfile = styled.div`
@@ -307,6 +496,7 @@ flex-direction:column;
             font-weight:700;
             font-size:0.6em;
             border-top: 2px solid #C4C4C4;
+            
         }
         li:last-child{
             border-bottom: 2px solid #C4C4C4;
@@ -317,8 +507,9 @@ flex-direction:column;
         }
 `
 export const CloseSesion = styled.div`
-    grid-row:12/14;
+    grid-row:15/14;
     grid-column: 2/3;
+    margin-top: 50%;
     display:flex;
     align-items:center;
     font-size:0.6em;
