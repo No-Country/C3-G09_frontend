@@ -239,6 +239,41 @@ export const ImgBanner = styled.div`
     }
   }
 `;
+
+export const ImgBannerRegister = styled.div`
+  padding: 0;
+  margin-top: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  grid-column: 1/4;
+  grid-row: 1/5;
+
+  h2 {
+    margin-top: 15vw;
+    margin-left: 3vw;
+    font-size: 0.8em;
+    width: 100%;
+    text-align: center;
+  }
+  h1 {
+    grid-column: 1/4;
+    font-size: 0.8em;
+    text-align: center;
+    margin-top: 130px;
+  }
+
+  @supports (object-fit: cover) {
+    img {
+      margin: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+  }
+`;
+
 /* login*/
 export const ImgBannerLogin = styled.div`
   padding: 0;
@@ -407,6 +442,24 @@ export const DivCheckBox = styled.div`
     line-height: 35px;
   }
 `;
+
+export const DivCheckBoxRegister = styled.div`
+  max-width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  input {
+    height: 20px;
+    width: 20px;
+    margin: 1vw;
+    line-height: 15px;
+  }
+  span{
+    font-size:3vw;
+  }
+`;
+
 export const ShowPass = styled(MdOutlineRemoveRedEye)`
   width: 25px;
   height: 25px;
@@ -423,6 +476,20 @@ export const ButtonLog = styled.button`
   border: none;
   color: #fff;
   margin:3vw;
+  font-size: 3vw;
+
+  &:hover {
+    opacity: 0.5;
+  }
+`;
+
+export const ButtonLogRegister = styled.button`
+  background-color: #4888e9;
+  height: 52px;
+  width: 197px;
+  border: none;
+  color: #fff;
+  margin:10vw 29vw;
   font-size: 3vw;
 
   &:hover {

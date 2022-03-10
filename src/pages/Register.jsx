@@ -1,5 +1,5 @@
 import React from 'react'
-import { ButtonLog, ContainerLogin, DivCheckBox, FormLogCount, IconBack, ImgBanner } from '../components/elements'
+import { ButtonLogRegister, ContainerLogin, DivCheckBoxRegister, FormLogCount, IconBack, ImgBannerRegister } from '../components/elements'
 import { DivInput } from '../components/elements'
 import { Link } from 'react-router-dom'
 
@@ -8,10 +8,10 @@ const Register = () => {
   return (
     <div>
         <ContainerLogin>
-            <ImgBanner>
+            <ImgBannerRegister>
             <Link to='/'><IconBack/></Link> 
             <h2>Crear cuenta</h2>
-            </ImgBanner>
+            </ImgBannerRegister>
         <FormLogCount>
              <DivInput>
                   <span>Nombre y Apellido</span>
@@ -37,12 +37,13 @@ const Register = () => {
                   <span>Confirmar contraseña</span>
                   <input type="password" placeholder='Repetir contraseña' />
             </DivInput>
-            <DivCheckBox>
+            <DivCheckBoxRegister>
                     <input type="checkbox" />
                     <span>Acepto los <a href="">terminos y condiciones</a> del servicio</span>
-            </DivCheckBox>
+            </DivCheckBoxRegister>
             <div className="center">
-            <ButtonLog>Registrarme</ButtonLog>
+
+            <ButtonLogRegister>Registrarme</ButtonLogRegister>
             </div>
         </FormLogCount>
         </ContainerLogin>
