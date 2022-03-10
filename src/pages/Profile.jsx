@@ -1,5 +1,5 @@
 import React from 'react'
-import { ContainerLogin, ButtonsBox, CloseSesion, SupDiv, ImgBannerProfile } from '../components/elements'
+import { ContainerLoginNuevo, ButtonsBox, CloseSesion, SupDiv, ImgBannerProfile } from '../components/elements'
 import { Link } from 'react-router-dom'
 import {MdChevronRight, MdLogout} from 'react-icons/md'
 import HeadProfil from '../components/HeadProfil'
@@ -7,7 +7,7 @@ import {parking, fb, google, apple} from '../global/img/images'
 
 const Profile = () => {
   return (
-    <ContainerLogin>
+    <ContainerLoginNuevo>
       
         <HeadProfil/>
         <ButtonsBox>
@@ -22,7 +22,7 @@ const Profile = () => {
          <CloseSesion>
            <span><MdLogout/></span><a>Cerrar sesión</a>
         </CloseSesion>
-    </ContainerLogin>
+    </ContainerLoginNuevo>
   )
 }
 

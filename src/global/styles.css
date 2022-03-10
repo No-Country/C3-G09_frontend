@@ -35,8 +35,7 @@
     justify-content: center;
 }
 .center{
-    grid-column: 1/4;
-    display:flex;
+   
     justify-content: center;
     align-items: center;
     flex-direction: column;
