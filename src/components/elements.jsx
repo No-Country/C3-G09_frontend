@@ -692,3 +692,12 @@ export const WrapDiv = styled.div`
     color: rgba(0, 0, 0, 0.6);
   }
 `;
+
+export const Politicas = styled.div `
+  margin: 3vw;
+  padding:5vw;
+  text-align: justify;
+  font-size:18px;
+
+
+`

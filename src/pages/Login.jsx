@@ -53,7 +53,7 @@ const Login = () => {
 
                 <NoTiene>
                 <div className='center'>
-                  <Link className='linkComp' to='/home'>
+                  <Link className='linkComp' to='/'>
                     <ButtonLog>Iniciar sesión</ButtonLog>
                   </Link>
                   <br /><br /><br />
@@ -64,7 +64,7 @@ const Login = () => {
                   <SpanLogin>
                   <div className="center">
                  
-                  <span><a href="">Politica de Privacidad</a></span>  
+                  <span><Link to='/politicas'><a href="/Politicas">Politica de Privacidad</a></Link></span>  
                  </div>
                  </SpanLogin>
                  </NoTiene>
