@@ -9,10 +9,8 @@ import Home from "./pages/Home";
 import Register from "./pages/Register";
 import Profile from "./pages/Profile";
 import UserDate from "./pages/UserDate";
-
-
-
-
+import Pay from "./pages/Pay";
+import Politicas from "./pages/politicas";
 
 
 function App() {
@@ -33,9 +31,7 @@ function App() {
         
         <div className="app">
         
-            {/* <Login/> */}
-
-            {/*  <Pay/>  */ }
+          
         <BrowserRouter>
             <Routes>
             <Route path='/' element={<Home/>} />
@@ -43,6 +39,9 @@ function App() {
             <Route path="/register" element={<Register/>}/>
             <Route path='/profile' element={<Profile/>}/>
             <Route path='/userdate' element={<UserDate/>}/>
+            <Route path='/pay' element={<Pay/>} />
+            <Route path='/politicas' element={<Politicas/>} />
+            
 
             </Routes>
         </BrowserRouter>

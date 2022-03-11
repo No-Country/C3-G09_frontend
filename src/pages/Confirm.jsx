@@ -5,10 +5,10 @@ const Confirm = () => {
   return (
     <div>
       <ListoDiv>
-        <br />
-        <br />
-        <br />
-        <br />
+        <br/>
+        <br/>
+        <br/>
+        <br/>
         <Logo>
           <div class="success-checkmark">
             <div class="check-icon">
