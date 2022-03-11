@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, BrowserRouter} from 'react-router-dom';
-import React, {useEffect, useState } from "react";
+import React, {useEffect, useState, useReducer } from "react";
 import Loading from "./pages/Loading";
 import './global/styles.css'
 import Restriction from "./pages/Restriction";
@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import Register from "./pages/Register";
 import Profile from "./pages/Profile";
 import UserDate from "./pages/UserDate";
+import { authReducer } from './auth/authReducer';
 
 
 
@@ -23,7 +24,19 @@ function App() {
     setLoading(true)
       setTimeout(()=>{
         setLoading(false)
-        }, 2500);},[])
+        }, 1500);},[])
+   
+        const init = ()=> {
+          return  JSON.parse(localStorage.getItem('user')) || {logged:false}
+      }
+  
+      
+      const [user, dispatch] = useReducer(authReducer, {}, init)
+  
+      useEffect(() => {
+          localStorage.setItem('user', JSON.stringify(user))
+      }, [user])
+
 
   return (
     <div>
